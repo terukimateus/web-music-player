@@ -181,6 +181,9 @@ header h2 {
   .content {
     flex-direction: column;
   }
+  .content .type {
+    align-items: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .content {
