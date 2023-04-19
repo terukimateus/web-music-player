@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Player</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/276f9ca786.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-music fa-2x"></i>
+            <h2 class="title">Music Player</h2>
+            <span id="current-song-title">Tocando</span>
+        </div>
+        
+        <div class="perfil">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <p>Perfil</p>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="type">
+            <h2>Pop</h2>
+            <div class="musics">
+                <div onclick="abrirModal()" class="music">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273f76f8deeba5370c98ad38f1c">
+                    <p>Chemical - Post Malone</p>
+                </div>
+                <div onclick="abrirItWas()"class="music">
+                    <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/0/1/1/a/01653041095.jpg">
+                    <p>As it Was - Harry Styles</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="type">
+            <h2>Rap</h2>
+            <div class="musics">
+                <div onclick="abrirVampiro()"class="music">
+                    <img src="https://i1.sndcdn.com/artworks-41q5aXHyqsGfC8l5-UWwZbA-t500x500.jpg">
+                    <p>Vampiro - Matuê, Wiu, Teto</p>
+                </div>
+                <div onclick="abrirKonteiner()"class="music">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02636236e7d37c5b92488e5323">
+                    <p>Konteiner - Felipe Ret</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="janela-modal" id="chemical-modal">
+        <div class="modal">
+                <img src="https://i.scdn.co/image/ab67616d0000b273f76f8deeba5370c98ad38f1c">
+        
+                <div class="desc">
+                    <h2>Chemical</h2>
+                    <p>Post Malone</p>
+                </div>
+                
+                <audio id="myAudio" src=""></audio>
+
+                <div id="player">
+
+                    <div id="progress-bar">
+                        <div id="progress-bar-filled"></div>
+                      </div>
+                    <div class="botoes">
+                        <button onclick="playChemical()"id="play-pause"><i class="fa-solid fa-play fa-2x"></i></button>
+                    </div>
+
+                </div>
+                <button class="fechar" id="fechar">X</button>
+                <button class="fechar" id="fechar">X</button>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="itwas-modal">
+        <div class="modal">
+                <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/0/1/1/a/01653041095.jpg">
+        
+                <div class="desc">
+                    <h2>As it Was</h2>
+                    <p>Harry Styles</p>
+                </div>
+                
+                <audio id="myAudio" src= ""></audio>
+
+                <div id="player">
+
+                    <div id="progress-bar">
+                        <div id="progress-bar-filled"></div>
+                      </div>
+                    <div class="botoes">
+                        <button onclick="playAsItWas()"id="play-pause"><i class="fa-solid fa-play fa-2x"></i></button>
+                    </div>
+
+                </div>
+                <button class="fechar" id="fechar">X</button>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="vampiro-modal">
+        <div class="modal">
+                <img src="https://i1.sndcdn.com/artworks-41q5aXHyqsGfC8l5-UWwZbA-t500x500.jpg">
+        
+                <div class="desc">
+                    <h2>Vampiro</h2>
+                    <p>Matuê, Wiu, Teto</p>
+                </div>
+                
+                <audio id="myAudio" src= ""></audio>
+
+                <div id="player">
+
+                    <div id="progress-bar">
+                        <div id="progress-bar-filled"></div>
+                      </div>
+                    <div class="botoes">
+                        <button onclick="playVampiro()"id="play-pause"><i class="fa-solid fa-play fa-2x"></i></button>
+                    </div>
+
+                </div>
+                <button class="fechar" id="fechar">X</button>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="konteiner-modal">
+        <div class="modal">
+                <img src="https://i.scdn.co/image/ab67616d00001e02636236e7d37c5b92488e5323">
+        
+                <div class="desc">
+                    <h2>Konteiner</h2>
+                    <p>Felipe Ret</p>
+                </div>
+                
+                <audio id="myAudio" src= ""></audio>
+
+                <div id="player">
+
+                    <div id="progress-bar">
+                        <div id="progress-bar-filled"></div>
+                      </div>
+                    <div class="botoes">
+                        <button onclick="playKonteiner()"id="play-pause"><i class="fa-solid fa-play fa-2x"></i></button>
+                    </div>
+
+                </div>
+                <button class="fechar" id="fechar">X</button>
+        </div>
+    </div>
+</body>
+</html>
